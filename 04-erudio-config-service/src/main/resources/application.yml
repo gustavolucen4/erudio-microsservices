@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: erudio-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gustavolucen4/erudio-config-service
+          #username:
+          #password:
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
